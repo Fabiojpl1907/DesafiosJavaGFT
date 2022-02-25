@@ -1,4 +1,4 @@
-package gftAssurance.desafio_1;
+package gftAssurance.desafios_GFT_QA_1;
 //Desafio
 //        Duas motos (X e Y) partem em uma mesma direção.
 //        A moto X sai com velocidade constante de 60 Km/h

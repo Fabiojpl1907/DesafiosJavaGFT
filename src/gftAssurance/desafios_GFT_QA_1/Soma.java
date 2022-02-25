@@ -1,4 +1,4 @@
-package gftAssurance.desafio_1;
+package gftAssurance.desafios_GFT_QA_1;
 //Desafio
 //		Leia dois valores inteiros identificados como variáveis A e B.
 //		Calcule a soma entre elas e chame essa variável de SOMA.

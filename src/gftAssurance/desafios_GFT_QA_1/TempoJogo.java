@@ -1,4 +1,4 @@
-package gftAssurance.desafio_1;
+package gftAssurance.desafios_GFT_QA_1;
 //Desafio
 //		Tento como base a hora inicial e final de um jogo,
 //		calcule a duração do dele, sabendo que o mesmo pode começar em um dia e terminar em outro,

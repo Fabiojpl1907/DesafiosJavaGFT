@@ -1,4 +1,4 @@
-package gftAssurance.desafio_1;
+package gftAssurance.desafios_GFT_QA_1;
 //Desafio
 //		Você terá o desafio de escrever um algoritmo que leia 2 números e
 //		imprima o resultado da divisão do primeiro pelo segundo.

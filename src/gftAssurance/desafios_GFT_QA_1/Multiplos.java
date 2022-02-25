@@ -1,4 +1,4 @@
-package gftAssurance.desafio_1;
+package gftAssurance.desafios_GFT_QA_1;
 
 //  Desafio
 //  Leia 2 valores inteiros (A e B).
