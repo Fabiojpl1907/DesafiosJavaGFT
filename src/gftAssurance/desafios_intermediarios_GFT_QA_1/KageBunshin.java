@@ -39,24 +39,39 @@ import java.util.Scanner;
 public class KageBunshin {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int cont = 0;
+		Scanner entrada = new Scanner(System.in);
 
-		while (true ) {
+		// o tema é sobre PG - progressão geometrica
+		// considerendo o termo geral de PG
+		// An = A1·Q^(n – 1)
+		// onde q é a razão = 2 - a sempre uma dobra da quantidade de ninjas
+		// a1 é o inico da série = 1
+		// an é um elemento em uma posição especifica da prograssão
+		// em nosso caso a ultima posição é fornecida - "an"
+		// nos resta descobrir a posição que este elemento esta "n"
+		// o que nos dará a quantidade de vezes que a técnica foi utilizada
+		// para entender o raciocinio assita : https://www.youtube.com/watch?v=S9W-xqhYzQA
 
-			int entrada = sc.nextInt();
-			while (entrada != 1) {
-
-				if (entrada % 2 == 0) {
-					cont += 1;
-				}
-				entrada /= 2;
+		while(entrada.hasNext())
+		{
+			int usoTecnica = 0;
+			int an  = entrada.nextInt();
+			// fatorar em base 2
+			// pois nossa razão 2
+			while( an > 1){
+				usoTecnica += 1;
+				an /= 2;
 			}
-			System.out.println(cont);
-	}
-//		sc.close();
+
+			System.out.println( usoTecnica );
+
+		}
+
+		entrada.close();
 	}
 }
+
+
 
 //original
 //		import java.util.Scanner;
@@ -71,3 +86,10 @@ public class KageBunshin {
 //		sc.close();
 //	}
 //}
+
+// A Math.ceil()função sempre arredonda um número até o próximo maior inteiro.
+// exemplo : Math.ceil(7.004);  // 8
+// Math.log(x) = ln ( x ) = o único y de tal modo que e^y = x
+// ^ -> potenciação , ou seja "e" elevado a Y
+
+//			System.out.println((int)Math.ceil(Math.log(termo)));
