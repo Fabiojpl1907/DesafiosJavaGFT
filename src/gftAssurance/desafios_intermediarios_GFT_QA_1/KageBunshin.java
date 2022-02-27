@@ -72,21 +72,6 @@ public class KageBunshin {
 }
 
 
-
-//original
-//		import java.util.Scanner;
-//
-//public class KageBunshin {
-//
-//	public static void main(String[] args) {
-//		Scanner sc = new Scanner(System.in);
-//
-//		//Escreva o seu código aqui
-//
-//		sc.close();
-//	}
-//}
-
 // A Math.ceil()função sempre arredonda um número até o próximo maior inteiro.
 // exemplo : Math.ceil(7.004);  // 8
 // Math.log(x) = ln ( x ) = o único y de tal modo que e^y = x
