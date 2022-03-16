@@ -29,10 +29,14 @@ import java.util.Scanner;
 public class Divisao {
 	
     public static void main(String[] args) throws IOException {
-		//complete os espaços com sua solução
-                Scanner leitor = new Scanner(System.in);
+
+		Scanner leitor = new Scanner(System.in);
+		// numero de caso de testes
 		int N = leitor.nextInt();
+
+		// numeros a sertem recebidos
 		int X, Y;
+
 		for (int i = 0; i < N; i++) {
 			X = leitor.nextInt();
 			Y = leitor.nextInt();

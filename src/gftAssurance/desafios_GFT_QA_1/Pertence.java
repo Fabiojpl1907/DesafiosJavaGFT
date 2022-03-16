@@ -46,11 +46,11 @@ public class Pertence{
 			int a = scan.nextInt();
 			int b = scan.nextInt();
 
-			// trasnforma inteiro em string
+			// transforma inteiro em string
 			String str_a = String.valueOf(a);
 			String str_b = String.valueOf(b);
 
-			// captura o comprimnto de cada string
+			// captura o comprimento de cada string
 			int lenght_a = str_a.length();
 			int lenght_b = str_b.length();
 
@@ -63,6 +63,26 @@ public class Pertence{
 
 	}
 }
+
+
+// solução alternativa comparando inteiros
+
+//Scanner scan = new Scanner(System.in);
+//
+//	String A, B;
+//	int count = scan.nextInt();
+//
+//    for (int i = 0; i < count; i++) {
+//		A = scan.next();
+//		B = scan.next();
+//
+//		if (A.endsWith(B)) System.out.println("encaixa");
+//		else System.out.println("nao encaixa");
+//		}
+//		scan.close()
+//
+
+
 
 //original
 //		import java.util.Scanner;

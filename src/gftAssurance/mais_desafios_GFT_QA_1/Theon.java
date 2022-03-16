@@ -43,14 +43,20 @@ public class Theon {
     public static void main(String[] args) throws IOException {
 		Scanner leitor = new Scanner(System.in);
 
+		// numeros de casos ( pessoas )
 		int N = leitor.nextInt();
 
 		Integer[] array =new Integer[N];
 
+		// recebendo o valr de cada pessoa
 		for (int i =0 ; i < N ; i++) {
 			array[i] = leitor.nextInt();
 		}
+
+		// qual menor valor entre os informados
 		int posMenor =  Collections.min(Arrays.asList(array));
+
+		// qual pessoa é 1ª, 2ª , etc
 		int getIndex = Arrays.asList(array).indexOf(posMenor);
 
 		System.out.println(getIndex+1);

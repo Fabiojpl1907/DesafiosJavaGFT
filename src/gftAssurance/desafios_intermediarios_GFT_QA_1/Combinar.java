@@ -40,6 +40,7 @@ public class Combinar {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+		// ler quantidade de casos de teste
 		int casos = Integer.parseInt(br.readLine());
 
 		// repetir entradas de cadeias quantos forem os
@@ -69,7 +70,7 @@ public class Combinar {
 			}
 
 			// se comprimento de cadeias não forem iguais
-			// inserir os carcteres restantes da cadeia maior na combinação
+			// inserir os caracteres restantes da cadeia maior na combinação
 			if( a != b ){
 				if( a > b ){
 					combinar += cadeia[0].substring(menor,a );
@@ -106,4 +107,48 @@ public class Combinar {
 //		}
 //	}
 //
+//}
+
+// versão Lendro Silva - DalUz
+//import java.io.BufferedReader;
+//		import java.io.IOException;
+//		import java.io.InputStreamReader;
+//		import java.util.StringTokenizer;
+//
+//public class Main{
+//
+//	public static void main(String[] args) throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		StringBuilder strResult = new StringBuilder();
+//		String[] strArray;
+//		String readLine;
+//		int minLength;
+//
+//		// Número de casos de testes.
+//		StringTokenizer st = new StringTokenizer(br.readLine());
+//		int testCases = Integer.parseInt(st.nextToken());
+//
+//		for (int i = 0; i < testCases; i++) {
+//			readLine = br.readLine();
+//			strArray = readLine.split(" ");
+//
+//			minLength = Math.min(strArray[0].length(), strArray[1].length());
+//
+//			for (int j = 0; j < minLength; j++) {
+//				strResult.append(strArray[0], j, j + 1).append(strArray[1], j, j + 1);
+//			}
+//
+//			if (strArray[0].length() != strArray[1].length()) {
+//				if (strArray[0].length() < strArray[1].length()) {
+//					strResult.append(strArray[1].substring(minLength));
+//				} else {
+//					strResult.append(strArray[0].substring(minLength));
+//				}
+//			}
+//
+//			System.out.println(strResult);
+//
+//			strResult.delete(0, strResult.length());
+//		}
+//	}
 //}
